@@ -1,0 +1,82 @@
+/* google fonts import here  */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+
+/* variables  */
+:root {
+  --main-color: #2d4263;
+  --secondary-color: #333;
+  --accent-color: #fff;
+
+  --fonts: "Montserrat", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+header,
+main,
+section {
+  padding: 0.6rem 0rem;
+}
+
+/* custom classes  */
+.container {
+  max-width: min(100% - 2rem, 1260px);
+  margin: auto;
+}
+.colorize {
+  color: var(--main-color);
+}
+.btn {
+  padding: 0.5rem 1rem;
+  background-color: var(--main-color);
+  color: var(--accent-color);
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-family: var(--fonts);
+  transition: all 0.5s ease;
+}
+.btn:active {
+  transform: translateY(5px);
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.title {
+  padding: 0.7rem 1rem;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+}
+.color-danger {
+  color: salmon;
+}
+.bold {
+  font-weight: bold;
+}
+.disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
